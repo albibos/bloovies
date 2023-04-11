@@ -3,6 +3,9 @@ const urlParams = new URLSearchParams(window.location.search);
 if (document.getElementById("blazer") && document.getElementById('blazer').innerHTML === 'Official <span>Blazer</span> Service') {
 if (urlParams.get("episode")) {
 document.getElementById('content').style.display = 'none'
+  
+  var video = document.getElementById('player');
+   video.style.display = 'block';
 
 const episodeId = urlParams.get("episode");
 const mediaId = urlParams.get("show");
