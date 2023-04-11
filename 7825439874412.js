@@ -22,12 +22,7 @@ document.getElementById('content').style.display = 'none'
 }
   
 plyr.setup(video);
-}
-   
-if (urlParams.get("episode") {
-    document.getElementById('content').style.display = 'none'
-     var video = document.getElementById('player');
-     video.style.display = 'block';
+} else {
       const episodeId = urlParams.get("episode");
       const mediaId = urlParams.get("show");
 
@@ -43,9 +38,11 @@ if (urlParams.get("episode") {
             });
           });
       }
-}
 
       plyr.setup(video);
+
+}
+
 document.querySelector('#location').innerHTML = window.location.href + '?movie=watch-puss-in-boots-the-last-wish-91342';
 document.querySelector('#location').onclick = function() {
     window.open("/?movie=watch-puss-in-boots-the-last-wish-91342", "_blank");
